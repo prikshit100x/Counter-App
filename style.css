@@ -1,0 +1,84 @@
+/* General reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 300px;
+}
+
+#main h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+#counter-box {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#counter-box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#start {
+    background-color: #4caf50;
+}
+
+#stop {
+    background-color: #f44336;
+}
+
+#reset {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+button:active {
+    transform: scale(0.95);
+}
